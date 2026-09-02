@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Home from './pages/Home';
 import PlaceholderPage from './pages/PlaceholderPage';
+import Schedule from './pages/Schedule';
 
 import {
   Users,
@@ -41,7 +42,7 @@ export default function App() {
               />
               <Route
                 path="/schedule"
-                element={<PlaceholderPage title="Schedule" icon={Calendar} description="Weekly timetable for gym trainers and class bookings." />}
+                element={<Schedule />}
               />
               <Route
                 path="/workout-plans"
