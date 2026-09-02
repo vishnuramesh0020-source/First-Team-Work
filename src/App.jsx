@@ -1,25 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Classes from './pages/Classes';
 import Home from './pages/Home';
 import PlaceholderPage from './pages/PlaceholderPage';
 import Schedule from './pages/Schedule';
 import Trainers from './pages/Trainers';
-import Classes from './pages/Classes';
+import Workout from './pages/workout';
 
 
 
 import {
-  Users,
-  CreditCard,
-  Flame,
-  Calendar,
-  Dumbbell,
   Apple,
-  TrendingUp,
-  User,
+  CreditCard,
+  Dumbbell,
   Settings,
+  TrendingUp,
+  User
 } from "lucide-react";
 import Memberships from "./pages/Memberships";
 
@@ -64,13 +61,7 @@ export default function App() {
               />
               <Route
                 path="/workout-plans"
-                element={
-                  <PlaceholderPage
-                    title="Workout Plans"
-                    icon={Dumbbell}
-                    description="Custom workout splits, strength programs, and cardio routines."
-                  />
-                }
+                element={<Workout />}
               />
               <Route
                 path="/nutrition"
