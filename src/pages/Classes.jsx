@@ -1,4 +1,4 @@
-// import "./Classes.css";
+import "./Classes.css";
 
 const classes = [
   {

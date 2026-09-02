@@ -9,6 +9,7 @@ import Trainers from './pages/Trainers';
 import Classes from './pages/Classes';
 
 
+
 import {
   Users,
   CreditCard,
@@ -21,6 +22,7 @@ import {
   Settings,
 } from "lucide-react";
 import Memberships from "./pages/Memberships";
+import Classes from "./pages/Classes";
 
 export default function App() {
   return (
@@ -44,6 +46,17 @@ export default function App() {
                   />
                 }
               />
+              <Route
+                path="/memberships"
+                element={
+                  <PlaceholderPage
+                    title="Memberships"
+                    icon={CreditCard}
+                    description="Explore monthly, quarterly, and annual gym membership packages."
+                  />
+                }
+              />
+              <Route path="/classes" element={<Classes />} />
               <Route
                 path="/schedule"
                 element={
