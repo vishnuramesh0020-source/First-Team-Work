@@ -22,7 +22,6 @@ import {
   Settings,
 } from "lucide-react";
 import Memberships from "./pages/Memberships";
-import Classes from "./pages/Classes";
 
 export default function App() {
   return (
