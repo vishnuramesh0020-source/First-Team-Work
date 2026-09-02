@@ -4,6 +4,8 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Home from './pages/Home';
 import PlaceholderPage from './pages/PlaceholderPage';
+import Classes from './pages/Classes';
+import Trainers from './pages/Trainers';
 
 import {
   Users,
@@ -29,7 +31,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route
                 path="/trainers"
-                element={<PlaceholderPage title="Trainers" icon={Users} description="View certified gym coaches, bio, and personal training slots." />}
+                element={<Trainers />}
               />
               <Route
                 path="/memberships"
@@ -37,7 +39,7 @@ export default function App() {
               />
               <Route
                 path="/classes"
-                element={<PlaceholderPage title="Classes" icon={Flame} description="Join HIIT, Powerlifting, Yoga, Spin, and Crossfit group sessions." />}
+                element={<Classes />}
               />
               <Route
                 path="/schedule"
